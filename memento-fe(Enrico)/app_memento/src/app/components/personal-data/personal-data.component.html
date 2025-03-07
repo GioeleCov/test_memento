@@ -1,0 +1,64 @@
+<!--
+cambiare stile home page verticale
+titolo al centro
+card sotto al titolo
+
+inserire i dati dell anagrafica(caht con Gioele su Slack)
+
+private String name;
+private String surname;
+private String phoneNumber;
+private String address;
+private String cap;
+private String region;
+private String province;
+private String city;
+
+prendi le stesse classi del form di registrazione
+stilizza simile alla registrazione
+confronta con Lucio come fare cosa e organizzati
+
+-->
+
+<div class="text-center">
+  <div class="form-signin" id="container">
+    <form class="login-form">
+      <img class="mb-4" ngSrc="assets/images/logo.svg" alt="" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Completa la tua registrazione</h1>
+
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Nome" formControlName="name" >
+        <label for="floatingInput">Nome</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Cognome" formControlName="surname" >
+        <label for="floatingInput">Cognome</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Telefono" formControlName="phone-number" >
+        <label for="floatingInput">Telefono</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Indirizzo" formControlName="address" >
+        <label for="floatingInput">Indirizzo</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="CAP" formControlName="cap" >
+        <label for="floatingInput">CAP</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Regione" formControlName="region" >
+        <label for="floatingInput">Regione</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Provincia" formControlName="province" >
+        <label for="floatingInput">Provincia</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Città" formControlName="city" >
+        <label for="floatingInput">Città</label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Registrati</button>
+    </form>
+  </div>
+  </div>

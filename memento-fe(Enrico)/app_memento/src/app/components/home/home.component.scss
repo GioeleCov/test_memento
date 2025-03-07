@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  height: 100%;
+  width: 30%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.button {
+  size: 12px;
+}
+
+.sfondo-titolo {
+  padding: 50px;
+  background-color: black;
+  border-radius: 25px;
+}
