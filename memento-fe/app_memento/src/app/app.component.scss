@@ -1,4 +1,8 @@
-html,
-body {
-  height: 100%;
+app-navbar, app-footer {
+  flex-grow: 0;
+  padding: 0;
+  margin: 0;
+}
+app-router-outlet {
+  flex: 1 0 auto;
 }
