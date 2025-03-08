@@ -5,6 +5,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {LoginModule} from './components/login/login.module';
+import {NavbarModule} from './components/navbar/navbar.module';
+import {NavbarComponent} from './components/navbar/navbar.component';
+import {FooterModule} from './components/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,9 @@ import {LoginModule} from './components/login/login.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    LoginModule
+    LoginModule,
+    NavbarModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
