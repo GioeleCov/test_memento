@@ -1,18 +1,24 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { Validators, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
-  standalone: false,
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrl: './login.component.scss',
+  standalone: false,
 })
 export class LoginComponent {
+  loginForm;
 
-  user : string = '';
-  password : string = '';
-  remember : boolean = false;
+  constructor(private formBuilder: FormBuilder) {
+    this.loginForm = this.formBuilder.group({
+      user: ['', Validators.required],
+      password: ['', [Validators.required]],
+      remember: [false]
+    });
+  }
 
   onSubmit() {
-    return true;
+    console.log(this.loginForm.value);
   }
 }
